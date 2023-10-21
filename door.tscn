@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cslnfb3mx6wb5"]
+
+[ext_resource type="Texture2D" uid="uid://lv3d0sip2it0" path="res://texture/pixil-frame-0.png" id="1_jeqwf"]
+
+[node name="door" type="Sprite2D"]
+texture = ExtResource("1_jeqwf")

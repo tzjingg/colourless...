@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0huh3na2l28i"]
+
+[ext_resource type="Texture2D" uid="uid://bv6ncwdvqh4c0" path="res://texture/grunge-vintage-old-paper-background.jpg" id="2_erio3"]
+[ext_resource type="FontFile" uid="uid://c4sa74yi5cbus" path="res://font/HelloKetta-d99oX.ttf" id="2_por5o"]
+[ext_resource type="Script" path="res://story.gd" id="3_t04mh"]
+
+[node name="story" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 664.0
+color = Color(0.133333, 0.133333, 0.133333, 0.533333)
+
+[node name="Grunge-vintage-old-paper-background" type="Sprite2D" parent="."]
+position = Vector2(576, 328)
+scale = Vector2(0.354462, 0.298781)
+texture = ExtResource("2_erio3")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_left = 8.0
+offset_top = 14.0
+offset_right = 1152.0
+offset_bottom = 670.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_por5o")
+theme_override_font_sizes/font_size = 55
+text = "i found a weird-looking door at the end of the hallway as i felt curious and walked into it. All of a sudden, a strange feeling snuck upon me, as if i was distorted, pancaked. i had entered a two-dimensional realm. i then found out that i had been inserted into an otherworldly place, which was five floors underground. i had been transformed into a vulnerable spider, constantly being hunted by cold-blooded machinery and continuously seeking for help. The only way i could escape was to find the door to freedom, which was at ground floor. i felt more and more desperate each time i failed as i eventually collapsed onto the floor, suffering from fatigueness. Balls of tears began to roll down my cheeks as all my emotions poured out, scattered on the floor. i felt my whole body exhausted, drained of power. Curiostiy killed the cat, and it also put me into an almost inescapable prison. Freedom is lost, darkness soon shrouded my eyes as i entered the realm of eternal rest......
+                                                                                                                                                                                                  - Future self"
+autowrap_mode = 3
+script = ExtResource("3_t04mh")
